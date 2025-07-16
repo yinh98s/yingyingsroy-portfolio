@@ -21,7 +21,7 @@ const Home: React.FC = () => {
       {/* Spacer to push content below the fixed top bar */}
       <div style={{ height: 120 }} />
       {/* Main content row: statement, then boxes, then image */}
-      <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'flex-start', width: '100%', minHeight: 'calc(100vh - 120px)' }}>
+      <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', width: '100%', height: '100%' }}>
         {/* Left: Statement and boxes */}
         <div style={{ flex: 2, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', height: '100%', marginLeft: '10vw' }}>
           <section>
@@ -64,6 +64,12 @@ const Home: React.FC = () => {
         <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
           <img src="/profile-placeholder.jpg" alt="Profile" style={{ width: 260, height: 260, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 4px 24px rgba(0,0,0,0.15)' }} />
         </div>
+      </div>
+      {/* Contact links at bottom of page */}
+      <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 60, padding: '40px 60px', marginTop: 40 }}>
+        <a href="mailto:y.sroy.job@gmail.com" style={{ color: 'black', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.2rem' }}>Email</a>
+        <a href="https://www.linkedin.com/in/yingying-sroy" target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.2rem' }}>LinkedIn</a>
+        <a href="https://github.com/yinh98s" target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.2rem' }}>GitHub</a>
       </div>
     </main>
   );

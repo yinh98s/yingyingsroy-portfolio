@@ -16,7 +16,7 @@ const About: React.FC = () => {
       </div>
       {/* Spacer to push content below the fixed top bar */}
       <div style={{ height: 120 }} />
-      {/* Rectangle boxes and left-aligned images */}
+      {/* Rectangle boxes positioned to the left */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', minHeight: 'calc(100vh - 120px)', width: '100%' }}>
         <div style={{ padding: '40px 48px', background: 'white', borderRadius: 16, boxShadow: '0 2px 16px rgba(0,0,0,0.12)', maxWidth: 600, border: '2px solid #ff8800', textAlign: 'center', marginLeft: '8vw', marginBottom: 32, marginTop: 0 }}>
           <h2 style={{ fontSize: '2rem', marginBottom: 16 }}>About Me</h2>
@@ -41,6 +41,12 @@ const About: React.FC = () => {
             <li>I am always open to feedback and new ideas.</li>
           </ul>
         </div>
+      </div>
+      {/* Contact links at bottom of page */}
+      <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 60, padding: '40px 60px', marginTop: 40 }}>
+        <a href="mailto:y.sroy.job@gmail.com" style={{ color: 'black', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.2rem' }}>Email</a>
+        <a href="https://linkedin.com/in/yingyingsroy" target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.2rem' }}>LinkedIn</a>
+        <a href="https://github.com/yinh98s" target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'none', fontWeight: 'bold', fontSize: '1.2rem' }}>GitHub</a>
       </div>
     </main>
   );
