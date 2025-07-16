@@ -18,8 +18,9 @@ const Home: React.FC = () => {
           <Link href="/projects" style={{ fontSize: '1.2rem' }}>Projects</Link>
         </nav>
       </div>
-      {/* Main content row: statement left, image right */}
+      {/* Main content row: statement, then three boxes in a column, then image */}
       <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', width: '100%', height: '100%' }}>
+        {/* Left: Statement and three boxes */}
         <div style={{ flex: 2, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center', height: '100%', marginLeft: '10vw' }}>
           <section>
             <h3 style={{ fontSize: '2.5rem', marginBottom: 10, textAlign: 'left' }}>Hello I am</h3>
@@ -33,8 +34,26 @@ const Home: React.FC = () => {
             >
               Hire Me
             </button>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 24, marginTop: 32 }}>
+              <div style={{ padding: '24px 32px', background: 'white', borderRadius: 12, boxShadow: '0 2px 12px rgba(0,0,0,0.10)', maxWidth: 320, border: '2px solid #ff8800' }}>
+                <p style={{ color: '#333', fontSize: '1.1rem', margin: 0 }}>
+                  I am passionate about web development and always eager to learn new technologies. My goal is to contribute to innovative projects and grow as a developer. Let's connect and create something amazing together!
+                </p>
+              </div>
+              <div style={{ padding: '24px 32px', background: 'white', borderRadius: 12, boxShadow: '0 2px 12px rgba(0,0,0,0.10)', maxWidth: 320, border: '2px solid #ff8800' }}>
+                <p style={{ color: '#333', fontSize: '1.1rem', margin: 0 }}>
+                  I enjoy collaborating with others and believe that teamwork leads to the best results. I am open to new opportunities and excited to start my professional journey in tech!
+                </p>
+              </div>
+              <div style={{ padding: '24px 32px', background: 'white', borderRadius: 12, boxShadow: '0 2px 12px rgba(0,0,0,0.10)', maxWidth: 320, border: '2px solid #ff8800' }}>
+                <p style={{ color: '#333', fontSize: '1.1rem', margin: 0 }}>
+                  I am committed to continuous self-improvement and value feedback as a way to grow. My curiosity drives me to explore new ideas and technologies in the ever-evolving IT landscape.
+                </p>
+              </div>
+            </div>
           </section>
         </div>
+        {/* Right: Profile image */}
         <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
           <img src="/profile-placeholder.jpg" alt="Profile" style={{ width: 260, height: 260, borderRadius: '50%', objectFit: 'cover', boxShadow: '0 4px 24px rgba(0,0,0,0.15)' }} />
         </div>
