@@ -6,25 +6,23 @@ const About: React.FC = () => {
   return (
     <main style={{ minHeight: '100vh', width: '100vw', background: 'orange' }}>
       {/* Top bar with title left and nav right */}
-      <div style={{ width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: '40px 60px 0 60px', boxSizing: 'border-box', position: 'fixed', top: 0, left: 0, zIndex: 10, background: 'orange' }}>
-        <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', textAlign: 'left', margin: 0 }}>Web Developer</h1>
-        <nav style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 40 }}>
-          <Link href="/" style={{ fontSize: '1.2rem' }}>Home</Link>
-          <Link href="/about" style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>About</Link>
-          <Link href="/projects" style={{ fontSize: '1.2rem' }}>Projects</Link>
+      <div style={{ width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: '12px 60px 0 60px', boxSizing: 'border-box', background: 'linear-gradient(90deg, #fbe7c6 0%, #fca311 100%)', height: 56 }}>
+        <h1 style={{ fontFamily: 'Fredoka One, Baloo 2, Arial Rounded MT Bold, Arial, sans-serif', fontSize: '2rem', fontWeight: 700, color: '#d6861a', margin: 0, letterSpacing: 2, textShadow: '2px 2px 2px #fff2cc, 2px 2px 4px #b36b00' }}>Web Developer</h1>
+        <nav style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 32 }}>
+          <Link href="/" style={{ fontWeight: 700, fontSize: '1rem', color: 'white', textDecoration: 'none', letterSpacing: 1 }}>Home</Link>
+          <Link href="/about" style={{ fontWeight: 700, fontSize: '1rem', color: 'white', textDecoration: 'none', letterSpacing: 1 }}>About</Link>
+          <Link href="/projects" style={{ fontWeight: 700, fontSize: '1rem', color: 'white', textDecoration: 'none', letterSpacing: 1 }}>Project</Link>
         </nav>
       </div>
-      {/* Spacer to push content below the fixed top bar */}
-      <div style={{ height: 120 }} />
+      <div style={{ height: 64 }} />
       {/* Rectangle boxes positioned to the left */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', minHeight: 'calc(100vh - 120px)', width: '100%' }}>
         <div style={{ padding: '40px 48px', background: 'white', borderRadius: 16, boxShadow: '0 2px 16px rgba(0,0,0,0.12)', maxWidth: 600, border: '2px solid #ff8800', textAlign: 'center', marginLeft: '8vw', marginBottom: 32, marginTop: 0 }}>
           <h2 style={{ fontSize: '2rem', marginBottom: 16 }}>About Me</h2>
-          <ul style={{ color: '#333', fontSize: '1.15rem', margin: 0, textAlign: 'left', paddingLeft: 24 }}>
-            <li>I am Yingying Sroy, a Computer Science fresh graduate passionate about technology, learning, and creative problem-solving.</li>
-            <li>I enjoy K-drama, reading books, and exploring new trends in the IT world.</li>
-            <li>My goal is to grow as a developer and contribute to meaningful projects.</li>
-          </ul>
+          <div style={{ color: '#333', fontSize: '1.15rem', margin: 0, textAlign: 'left' }}>
+            <p>As a recent graduate, I am actively seeking opportunities in web development. Alongside my job search, I've been passionate about building side projects to showcase my skills to potential employers. These projects not only demonstrate my technical abilities but also reflect my dedication and initiative in the field.</p>
+            <p>I've carefully crafted each project to highlight different aspects of my skill set, ranging from front-end design to back-end development and everything in between. By creating these projects, I aim to convey my capabilities and readiness to contribute effectively to any team or project I become a part of.</p>
+          </div>
         </div>
         {/* Four images left-aligned horizontally */}
         <div style={{ display: 'flex', flexDirection: 'row', gap: 32, marginLeft: '8vw', marginBottom: 32 }}>
@@ -33,13 +31,46 @@ const About: React.FC = () => {
           <img src="/profile-placeholder.jpg" alt="Pic 3" style={{ width: 120, height: 120, borderRadius: 12, objectFit: 'cover', boxShadow: '0 2px 8px rgba(0,0,0,0.10)' }} />
           <img src="/profile-placeholder.jpg" alt="Pic 4" style={{ width: 120, height: 120, borderRadius: 12, objectFit: 'cover', boxShadow: '0 2px 8px rgba(0,0,0,0.10)' }} />
         </div>
+        {/* Images row centered between boxes */}
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 56, margin: '32px 0' }}>
+          <img src="/profile-placeholder.jpg" alt="Profile Illustration" style={{ width: 80, height: 80, objectFit: 'contain', background: 'white', borderRadius: 12 }} />
+          <img src="/java-logo.png" alt="Java" style={{ width: 60, height: 80, objectFit: 'contain', background: 'white', borderRadius: 12 }} />
+          <img src="/database-icon.png" alt="Database" style={{ width: 60, height: 60, objectFit: 'contain', background: 'white', borderRadius: 12 }} />
+          <img src="/react-logo.png" alt="React" style={{ width: 70, height: 70, objectFit: 'contain', background: 'white', borderRadius: 12 }} />
+          <img src="/css-logo.png" alt="CSS3" style={{ width: 60, height: 80, objectFit: 'contain', background: 'white', borderRadius: 12 }} />
+          <img src="/html-logo.png" alt="HTML5" style={{ width: 60, height: 80, objectFit: 'contain', background: 'white', borderRadius: 12 }} />
+        </div>
         <div style={{ padding: '40px 48px', background: 'white', borderRadius: 16, boxShadow: '0 2px 16px rgba(0,0,0,0.12)', maxWidth: 600, border: '2px solid #ff8800', textAlign: 'center', marginLeft: '8vw', marginBottom: 40 }}>
-          <h2 style={{ fontSize: '2rem', marginBottom: 16 }}>My Values</h2>
-          <ul style={{ color: '#333', fontSize: '1.15rem', margin: 0, textAlign: 'left', paddingLeft: 24 }}>
-            <li>I believe in lifelong learning, teamwork, and integrity.</li>
-            <li>I strive to bring a positive attitude and strong work ethic to every project.</li>
-            <li>I am always open to feedback and new ideas.</li>
-          </ul>
+          <h2 style={{ fontSize: '2rem', marginBottom: 16 }}>Work Experience</h2>
+          <div style={{ color: '#333', fontSize: '1.15rem', margin: 0, textAlign: 'left' }}>
+            {/* First job */}
+            <div style={{ marginBottom: 24 }}>
+              <div style={{ display: 'flex', alignItems: 'flex-start', fontWeight: 'bold', marginBottom: 6 }}>
+                <span style={{ color: 'black', marginRight: 12, fontSize: '1.5rem', lineHeight: 1 }}>•</span>
+                <span>Student Assistant and Grader / California State University – Sacramento</span>
+              </div>
+              <div style={{ marginLeft: 28, color: '#555', fontSize: '1.05rem' }}>
+                <div style={{ marginBottom: 2 }}>- Period : 01/24/2022 - 05/31/2022</div>
+                <div>- Assisted the professor in daily classroom operations, ensuring smooth instructional activities related to Java Programming</div>
+                <div>- Performed grading duties for Java programming assignments, quizzes, and discussions, maintaining the consistency in evaluation in the classroom</div>
+                <div>- Communicated course updates and announcements, ensuring students were all informed about any situation in the class</div>
+              </div>
+            </div>
+            {/* Second job */}
+            <div>
+              <div style={{ display: 'flex', alignItems: 'flex-start', fontWeight: 'bold', marginBottom: 6 }}>
+                <span style={{ color: 'black', marginRight: 12, fontSize: '1.5rem', lineHeight: 1 }}>•</span>
+                <span>Program Support and Student Assistant / California State Teachers’ Retirement System</span>
+              </div>
+              <div style={{ marginLeft: 28, color: '#555', fontSize: '1.05rem' }}>
+                <div style={{ marginBottom: 2 }}>- Period : 07/11/2023 - 01/02/2024</div>
+                <div>- Performed data entry for various forms and conduct audits as needed</div>
+                <div>- Maintained databases of the clients, ensuring data accuracy and accessibility</div>
+                <div>- Provided support for various computer-related tasks, including formatting documents such as converting webpages to Word, Word to PDF, etc.</div>
+                <div>- Collaborated closely with team members to ensure the efficiency in administrative tasks, leading to the smooth operation of the CAISTRS department</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {/* Contact links at bottom of page */}
