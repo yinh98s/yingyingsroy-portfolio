@@ -21,7 +21,7 @@ const About: React.FC = () => {
           <h2 style={{ fontSize: '2rem', marginBottom: 16 }}>About Me</h2>
           <div style={{ color: '#333', fontSize: '1.15rem', margin: 0, textAlign: 'left' }}>
             <p>As a recent graduate, I am actively seeking opportunities in web development. Alongside my job search, I've been passionate about building side projects to showcase my skills to potential employers. These projects not only demonstrate my technical abilities but also reflect my dedication and initiative in the field.</p>
-            <p>I've carefully crafted each project to highlight different aspects of my skill set, ranging from front-end design to back-end development and everything in between. By creating these projects, I aim to convey my capabilities and readiness to contribute effectively to any team or project I become a part of.</p>
+            <p>I've carefully crafted each project to highlight differents aspects of my skill set, ranging from front-end design to back-end development and everything in between. By creating these projects, I aim to convey my capabilities and readiness to contribute effectively to any team or project I become a part of.</p>
           </div>
         </div>
         {/* Four images left-aligned horizontally */}
