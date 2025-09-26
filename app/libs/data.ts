@@ -1,10 +1,8 @@
-// lib/data.ts
-import { absoluteUrl } from "./utils";
-import type { Experience, Project, Social } from "./types"; // ⬅️ was ../libs/types
+import type { Experience, Project, Social } from "./types";
 
 export const SITE = {
     name: "YingYing Sroy",
-    title: "YingYing Sroy – Software Engineer",
+    title: "YingYing Sroy – Computer Science Student",
     description:
         " Driven software  developer with dual Computer science  and Mathematics degree, bring  a unique analytical mindset to solving complex technical challenges. ",
     url: "https://yingyingsroy-portfolio.vercel.app",
