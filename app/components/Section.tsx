@@ -17,3 +17,4 @@ export default function Section({ id, title, className, children }: React.PropsW
         </section>
     );
 }
+
